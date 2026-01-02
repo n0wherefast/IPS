@@ -1,0 +1,30 @@
+ [
+    {
+      "title": "Garden Design",
+      "subtitle": "This service is best.",
+      "description":
+        "We offer personalized design services to create tailor-made gardens that reflect your tastes and needs. We work with you to select plants, flowers, and designs that seamlessly integrate with the surrounding environment.",
+      "image": "/gardenDesign.png"
+    },
+    {
+      "title": "Regular and Extraordinary Maintenance",
+      "subtitle": "This service is best.",
+      "description":
+        "From pruning to fertilization, our team takes care of all maintenance needs to keep your garden in optimal condition throughout the year",
+      "image": "/mantinience.png"    },
+    {
+      "title": "Irrigation Systems",
+      "subtitle": "This service is best.",
+      "description":
+        "We design and install efficient irrigation systems to ensure your plants receive the right amount of water, reducing waste and optimizing resources.",
+      "image": "/irrigation.png"
+    },
+    {
+      "title": "Lawn and Flower Bed Installation",
+      "subtitle": "This service is best.",
+      "description":
+        "We create lush lawns and vibrant flower beds that add color and vitality to your outdoor spaces",
+      "image": "/lawn.png"
+    }
+    
+]
