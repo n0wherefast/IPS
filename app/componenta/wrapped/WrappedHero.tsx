@@ -8,7 +8,7 @@ function WrappedHero() {
     <section className="relative isolate overflow-hidden">
         <div className="absolute inset-0 -z-10">
           {/* Replace with your wood-fired hero image */}
-          <img src="/hero.jpg" alt="Wood-fired pizza from our mobile oven" className="h-full w-full object-cover opacity-90" />
+          <Image height={500} width={500} src="/hero.jpg" alt="Wood-fired pizza from our mobile oven" className="h-full w-full object-cover opacity-90" />
           <div className="absolute inset-0 bg-gradient-to-t from-stone-950/60 via-stone-900/20 to-transparent" />
         </div>
         <div className="mx-auto max-w-7xl px-4 py-28 sm:py-40">
