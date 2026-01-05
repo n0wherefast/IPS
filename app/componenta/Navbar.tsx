@@ -172,9 +172,9 @@ function Navbar() {
            <Link href="#menu"className="mr-5 transition-all ease-in hover:text-red-500 hover:font-extrabold hover:text-lg">
             Menu
            </Link>
-           <Link href="#services"className="mr-5 transition-all ease-in hover:text-red-500 hover:font-extrabold hover:text-lg">
+           {/* <Link href="#services"className="mr-5 transition-all ease-in hover:text-red-500 hover:font-extrabold hover:text-lg">
              Service
-           </Link>
+           </Link> */}
            <Link href="#gallery"className="mr-5 transition-all ease-in hover:text-red-500 hover:font-extrabold hover:text-lg">
              Gallery
            </Link>
