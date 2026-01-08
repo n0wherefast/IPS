@@ -55,7 +55,7 @@ function Navbar({linksProp}:any) {
                   <Image
                   alt="italian pizza catering logo"
                   className="w-16 h-12 md:w-20 md:h-14"
-                  src='/assets/wep_files/logo.png'
+                  src='/logo.png'
                   width={100}
                   height={100}
                   /> 
