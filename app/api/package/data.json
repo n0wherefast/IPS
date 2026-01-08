@@ -1,0 +1,64 @@
+
+[
+  {
+   "id":0,
+   "name":"A",
+   "price": "from $28 pp",
+   "items": [
+      "30 min setup ","3 hours service",
+      "Entrèe:Garlic Pizza Herb Pizza ",
+      "Main:Choice of 3: Traditional Pizza Choice of 2: Premium Pizza",
+      "Dessert: Nutella Pizza","Up to 40 guests"
+    ]
+  },
+
+  {
+   "id":1,
+   "name":"B",
+   "price": "from $32 pp",
+   "items": [
+      "30 min setup ","3 hours service",
+      "Entrèe:Garlic Pizza Herb Pizza,Arancini",
+      "Main: Choice of 3: Traditional Pizza Choice of 2: Premium Pizza",
+      "Dessert: Nutella Pizza",
+      "Up to 40 guests"
+    ]
+  },
+
+  {
+   "id":2,
+   "name":"C",
+   "price": "from $35 pp",
+   "items": [
+      "30 min setup ","3 hours service",
+      "Entrèe: Choice of 3  Hot Chips, Garlic Pizza, Herb Pizza, Arancini, Fried Calamari",
+      "Main Choice of 3: Traditional Pizza Choice of 3: Premium Pizza",
+      "Dessert: Choice of 2: Nutella Pizza, Pistacchio Pizza, Cannoli (Chocolate or ricotta)","Up to 40 guests"]
+  },
+
+  {
+  "id":3,
+  "name":"D",
+  "price": "from $45 pp",
+  "items": [
+      "30 min setup ","3 hours service",
+      "Entrèe Choice of 4 : Chips, Garlic Pizza, Herb Pizza, Arancini, Fried Calamari, Bruschetta",
+      "Main: Choice of : any 6 pizza (premium or traditional), Lasagna",
+      "Dessert: Choice of 3 : Nutella Pizza, Pistacchio Pizza, Cannoli (Chocolate or ricotta)",
+      "Up to 40 guests"
+    ]
+  },
+  {
+    "id":4,
+    "name":"Special",
+    "price": "from $25 pp",
+    "items": [
+      "30 min setup ",
+      "3 hours service",
+      "Entrèe: Garlic Pizza Herb Pizza ",
+      "Main: 5 traditional pizzas",
+      "Dessert: Nutella Pizza",
+      "Up to 25 guests"
+    ]
+  }
+]

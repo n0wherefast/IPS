@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "./ThemeProvider/ThemeProvider";
+import Navbar from "./componenta/Navbar";
+import Footer from "./componenta/Footer";
 export const dynamic = 'force-dynamic'
 
 const inter = Inter({ subsets: ["latin"] });
@@ -20,7 +22,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         {/* <ThemeProvider> */}
+        {/* <Navbar/> */}
           {children}
+        <Footer/>
         {/* </ThemeProvider> */}
       </body>
     </html>

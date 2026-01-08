@@ -11,6 +11,7 @@ function getRandomReviews<T>(array: T[], count: number): T[] {
 const REVIEWS_TO_SHOW = 4;
 
 function WrappedReviews({reviews}:any) {
+    // console.log(reviews)
    const rev = useMemo(
     () => getRandomReviews(reviews, REVIEWS_TO_SHOW),  []  ); 
   return (
