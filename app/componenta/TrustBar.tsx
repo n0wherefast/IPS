@@ -10,11 +10,10 @@ function TrustBar() {
             "Locally sourced ingredients",
             "Catering across Sydney",
           ].map((t) => (
-            <div key={t} className="px-3 py-2 rounded-xl bg-stone-50 border border-stone-200">{t}</div>
+            <div key={t} className="px-3 py-2 rounded-xl bg-stone-50 border border-rose-400">{t}</div>
           ))}
         </div>
       </section>
   )
 }
-
 export default TrustBar

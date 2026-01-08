@@ -22,7 +22,7 @@ export default async function HomePage() {
 
 const links = await getLinkData()
   return (
-    <main className="text-gray-400 bg-gray-900 body-font">
+    <main className="text-gray-700 bg-gray-900 body-font">
     <Navbar linksProp={links[0]}/>
     <Home/>
     <TrustBar/>
