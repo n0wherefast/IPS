@@ -19,10 +19,10 @@ function Navbar({linksProp}:any) {
   const [isOpen,setIsOpen] = useState(false)
   const [isClick,setIsClick] = useState(false)
   const [isMenu , setIsMenu] = useState<boolean>()
-  const [isNameChanged,setIsNameChanged] = useState(true)
+  // const [isNameChanged,setIsNameChanged] = useState(true)
   const  [size,setSize] =useState(800)
   
-console.log(linksProp[0].isMenuPage)
+// console.log(linksProp[0].isMenuPage)
   useEffect(() => {
   
     function handleResize() {
@@ -76,21 +76,7 @@ console.log(linksProp[0].isMenuPage)
         </div>
         <nav onClick={()=>setIsOpen(false)} className={isOpen? ` gap-2  w-full md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-600	flex  flex-col md:flex-row items-start text-base justify-start  ` :
                                  ` hidden  md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-600	md:flex  items-center text-base justify-center`}>
-          {/* <a  href="app/pages/home" className="mr-5 transition-all ease-in hover:text-red-500 hover:font-extrabold hover:text-lg">
-              Home
-          </a>
-           <Link href="#packages"className="mr-5 transition-all ease-in hover:text-red-500 hover:font-extrabold hover:text-lg">
-             Package
-           </Link>
-           <Link href="#menu"className="mr-5 transition-all ease-in hover:text-red-500 hover:font-extrabold hover:text-lg">
-               Menu
-           </Link>
-           <Link href="#services"className="mr-5 transition-all ease-in hover:text-red-500 hover:font-extrabold hover:text-lg">
-             Service
-           </Link>
-           <Link href="#gallery"className="mr-5 transition-all ease-in hover:text-red-500 hover:font-extrabold hover:text-lg">
-               Gallery
-           </Link> */}
+
            {
            linksProp.map((link:any,id:any)=>{
               return(

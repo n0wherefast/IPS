@@ -1,19 +1,25 @@
 'use client'
-import { useMemo } from "react";
+import { useMemo ,useEffect,useState} from "react";
 import { Star } from "lucide-react";
 import { motion } from "framer-motion";
 
-function getRandomReviews<T>(array: T[], count: number): T[] {
-  const shuffled = [...array].sort(() => 0.5 - Math.random());
-  return shuffled.slice(0, count);
-}
+// function getRandomReviews<T>(array: T[], count: number): T[] {
+  
+// }
 
 const REVIEWS_TO_SHOW = 4;
 
 function WrappedReviews({reviews}:any) {
+    const [rev, setRev] = useState(() => reviews.slice(0, REVIEWS_TO_SHOW));
+
+    useEffect(()=>{
+        const shuffled = [...reviews].sort(() => 0.5 - Math.random());
+         setRev(shuffled.slice(0, REVIEWS_TO_SHOW));
+        //  return shuffled.slice(0, count);
+    },[reviews])
     // console.log(reviews)
-   const rev = useMemo(
-    () => getRandomReviews(reviews, REVIEWS_TO_SHOW),  []  ); 
+//    const rev = useMemo(
+//     () => getRandomReviews(reviews, REVIEWS_TO_SHOW),  []  ); 
   return (
 <section id="reviews" className="bg-stone-50 py-20" itemScope itemType="https://schema.org/LocalBusiness">
             <meta itemProp="name" content="Italian Pizza Sydney" />
@@ -52,7 +58,6 @@ function WrappedReviews({reviews}:any) {
                             itemType="https://schema.org/Review"
                         >
                         <div className="flex items-center gap-4">
-                            {/* Avatar with initial */}
                             <div className="h-14 w-14 rounded-full bg-rose-600 text-white flex items-center justify-center font-semibold text-xl">
                             {review.initial}
                             </div>
