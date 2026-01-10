@@ -3,7 +3,7 @@ import WrappedReviews from './wrapped/WrappedReviews'
 import type { JobsResponse } from '../types/dataTypes';
 export const dynamic = 'force-dynamic';
 
-// export const revalidate = 36 ;  
+
 
 const getReviews = async (): Promise<JobsResponse> => {
     const apiUrl = process.env.NEXT_PUBLIC_API_URL 

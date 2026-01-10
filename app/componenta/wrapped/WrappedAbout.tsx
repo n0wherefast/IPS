@@ -1,11 +1,16 @@
+'use client'
 import Image from 'next/image'
 import React from 'react'
+import {motion} from 'framer-motion'
 
 function WrappedAbout({aboutProp}:any) {
     console.log(aboutProp.image)
   return (
      <section id="about" className="bg-white border-y border-stone-200">
-        <div className="mx-auto max-w-7xl md:h-[60vh] px-4 py-16 grid md:grid-cols-2 gap-10 items-center">
+        <motion.div initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.8 }} className="mx-auto max-w-7xl md:h-[60vh] px-4 py-16 grid md:grid-cols-2 gap-10 items-center">
           <div>
             <Image src={aboutProp.image} height={500} width={500} alt="Our pizzaiolo by the oven" className="rounded-2xl border border-stone-200 w-full object-cover h-96"/>
           </div>
@@ -22,7 +27,7 @@ function WrappedAbout({aboutProp}:any) {
               ))}
             </ul>
           </div>
-        </div>
+        </motion.div>
       </section>
 
   )
