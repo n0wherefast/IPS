@@ -11,8 +11,9 @@ const getLinkData = async ()  => {
   return await response.json();
 };
 
-async function WrappedMenu() {
+async function WrappedMenu({menuProp}:any) {
 const links = await getLinkData()
+
 
   return (
     <div>
@@ -22,79 +23,40 @@ const links = await getLinkData()
         <div className=" grid md:grid-cols-2 gap-12 items-start md:h-full md:pl-28 pl-10 ">
           <div className=''>
             <h2 className="font-serif text-3xl md:text-6xl">Menu</h2>
-            <p className="mt-3 text-stone-300">A rotating selection of classics and seasonal specials. Vegetarian options available on request.</p>
+            <p className="mt-3 text-stone-300">A selection of our Classics and seasonal Specials and Arancini . Vegetarian options available on request.</p>
             <div className='grid md:grid-cols-3 md:w-[60vw] gap-10'>
                <ul className="mt-6 space-y-3 text-stone-300">
                 <h2 className='font-serif text-3xl md:text-4xl'>Classic</h2>
-              {[
-                ["Margherita", "San Marzano, fior di latte, basil"],
-                ["Diavola", "Spianata piccante, fior di latte, chilli"],
-                ["Prosciutto e Rucola", "Prosciutto, rocket, parmigiano"],
-                ["Funghi", "Mushroom mix, thyme, fior di latte"],
-                ["Margherita", "San Marzano, fior di latte, basil"],
-                ["Diavola", "Spianata piccante, fior di latte, chilli"],
-                ["Prosciutto e Rucola", "Prosciutto, rocket, parmigiano"],
-                ["Funghi", "Mushroom mix, thyme, fior di latte"],
-                ["Margherita", "San Marzano, fior di latte, basil"],
-                ["Diavola", "Spianata piccante, fior di latte, chilli"],
-                ["Prosciutto e Rucola", "Prosciutto, rocket, parmigiano"],
-                ["Funghis", "Mushroom mix, thyme, fior di latte"],
-              ].map(([name, desc],id) => (
+              {menuProp[0].map((pizza:any,id:number) => (
                 <li key={id} className="flex items-start gap-3">
                   <span className="mt-1">🍕</span>
                   <div>
-                    <p className="font-medium">{name}</p>
-                    <p className="text-stone-300 text-sm">{desc}</p>
+                    <p className="font-medium">{pizza.title}</p>
+                    <p className="text-stone-300 text-sm">{pizza.ingredients}</p>
                   </div>
                 </li>
               ))}
             </ul>
             <ul className="mt-6 space-y-3 text-stone-300">
                 <h2 className='font-serif text-3xl md:text-4xl'>Special</h2>
-              {[
-                ["Margherita", "San Marzano, fior di latte, basil"],
-                ["Diavola", "Spianata piccante, fior di latte, chilli"],
-                ["Prosciutto e Rucola", "Prosciutto, rocket, parmigiano"],
-                ["Funghi", "Mushroom mix, thyme, fior di latte"],
-                ["Margherita", "San Marzano, fior di latte, basil"],
-                ["Diavola", "Spianata piccante, fior di latte, chilli"],
-                ["Prosciutto e Rucola", "Prosciutto, rocket, parmigiano"],
-                ["Funghi", "Mushroom mix, thyme, fior di latte"],
-                ["Margherita", "San Marzano, fior di latte, basil"],
-                ["Diavola", "Spianata piccante, fior di latte, chilli"],
-                ["Prosciutto e Rucola", "Prosciutto, rocket, parmigiano"],
-                ["Funghi", "Mushroom mix, thyme, fior di latte"],
-              ].map(([name, desc],id) => (
+              {menuProp[1].map((pizza:any,id:number) => (
                 <li key={id} className="flex items-start gap-3">
                   <span className="mt-1">🍕</span>
                   <div>
-                    <p className="font-medium">{name}</p>
-                    <p className="text-stone-300 text-sm">{desc}</p>
+                    <p className="font-medium">{pizza.title}</p>
+                    <p className="text-stone-300 text-sm">{pizza.ingredients}</p>
                   </div>
                 </li>
               ))}
             </ul>  
             <ul className="mt-6 space-y-3 text-stone-300">
                 <h2 className='font-serif text-3xl md:text-4xl'>Arancini</h2>
-              {[
-                ["Margherita", "San Marzano, fior di latte, basil"],
-                ["Diavola", "Spianata piccante, fior di latte, chilli"],
-                ["Prosciutto e Rucola", "Prosciutto, rocket, parmigiano"],
-                ["Funghi", "Mushroom mix, thyme, fior di latte"],
-                ["Margherita", "San Marzano, fior di latte, basil"],
-                ["Diavola", "Spianata piccante, fior di latte, chilli"],
-                ["Prosciutto e Rucola", "Prosciutto, rocket, parmigiano"],
-                ["Funghi", "Mushroom mix, thyme, fior di latte"],
-                ["Margherita", "San Marzano, fior di latte, basil"],
-                ["Diavola", "Spianata piccante, fior di latte, chilli"],
-                ["Prosciutto e Rucola", "Prosciutto, rocket, parmigiano"],
-                ["Funghi", "Mushroom mix, thyme, fior di latte"],
-              ].map(([name, desc],id) => (
+             {menuProp[2].map((pizza:any,id:number) => (
                 <li key={id} className="flex items-start gap-3">
                   <span className="mt-1">🍕</span>
                   <div>
-                    <p className="font-medium">{name}</p>
-                    <p className="text-stone-300 text-sm">{desc}</p>
+                    <p className="font-medium">{pizza.title}</p>
+                    <p className="text-stone-300 text-sm">{pizza.ingredients}</p>
                   </div>
                 </li>
               ))}

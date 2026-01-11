@@ -93,7 +93,7 @@ function Navbar({linksProp}:any) {
         {linksProp[0].isMenuPage ?  null :
         <>
         <div  className= {isOpen? `md:inline-flex items-center  py-1 px-3     mt-4 md:mt-0` 
-                      :  ` hidden md:inline-flex items-center ml-5  border py-1 px-3   text-amber mt-4 md:mt-0  ` }>
+                      :  ` hidden md:inline-flex items-center ml-5 py-1 px-3   text-amber mt-4 md:mt-0  ` }>
           <Social/>
         </div>
           <Link

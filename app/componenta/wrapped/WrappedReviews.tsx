@@ -3,10 +3,6 @@ import { useEffect,useState} from "react";
 import { Star } from "lucide-react";
 import { motion } from "framer-motion";
 
-// function getRandomReviews<T>(array: T[], count: number): T[] {
-  
-// }
-
 const REVIEWS_TO_SHOW = 4;
 
 function WrappedReviews({reviews}:any) {
@@ -17,9 +13,7 @@ function WrappedReviews({reviews}:any) {
          setRev(shuffled.slice(0, REVIEWS_TO_SHOW));
         //  return shuffled.slice(0, count);
     },[reviews])
-    // console.log(reviews)
-//    const rev = useMemo(
-//     () => getRandomReviews(reviews, REVIEWS_TO_SHOW),  []  ); 
+   
   return (
 <section id="reviews" className="bg-stone-50 py-20" itemScope itemType="https://schema.org/LocalBusiness">
             <meta itemProp="name" content="Italian Pizza Sydney" />

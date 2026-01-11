@@ -3,6 +3,7 @@ import Image from 'next/image'
 import {useEffect,useState} from 'react'
 import { motion } from "framer-motion";
 import Link from 'next/link';
+import { SlSocialInstagram } from "react-icons/sl";
 
 const img_TO_SHOW = 12;
 function WrappedGallery({galleryImg}:any) {
@@ -15,10 +16,12 @@ function WrappedGallery({galleryImg}:any) {
             //  return shuffled.slice(0, count);
         },[galleryImg])
   return (
-    <section id="gallery" className="mx-auto max-w-7xl md:h-[85vh] px-4 py-16">
-            <div className="flex items-end justify-between">
+    <section id="gallery" className="mx-auto max-w-7xl md:h-[85vh] px-4 py-6 md:py-16">
+            <div className="flex flex-col md:flex-row md:items-end justify-between">
               <h2 className="font-serif text-3xl sm:text-4xl text-stone-200">Gallery</h2>
-              <Link href={'https://www.instagram.com/italianpizzasyd?igsh=NmxsOGVmeWQ2dXVv'} className=" underline underline-offset-4 text-stone-200 text-md">See More On Instagram Page →</Link>
+              <Link href={'https://www.instagram.com/italianpizzasyd?igsh=NmxsOGVmeWQ2dXVv'} className=" transition-all  text-stone-200 hover:text-rose-500 text-md flex items-center gap-2 h-4">
+               See More On Instagram Page <SlSocialInstagram/> 
+              </Link>
             </div>
             <div className="mt-6 grid grid-cols-2 md:grid-cols-4 gap-4">
               {

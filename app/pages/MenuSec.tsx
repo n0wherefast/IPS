@@ -1,9 +1,38 @@
-
 'use client'
 import Image from 'next/image'
-import React from 'react'
+import {useEffect,useMemo,useState} from 'react'
 import { motion } from "framer-motion";
+import Link from 'next/link';
+
+
+
+
+
+
+             
+const REVIEWS_TO_SHOW = 4;
 function MenuSec() {
+const pizzaRotation  = useMemo(()=>([
+                ["Salsiccia e patate", "White base, potato, sausage, rocket, parmesan\n"],
+                ["Napoli", "Tomato, mozzarella, anchovies, olives, capers"],
+                ["Boscaiola", "Tomato, mozzarella, sausage, mushroom"],
+                ["Capricciosa", "Tomato, mozzarella, ham, mushrooms, olives"],
+                ["Alessandro", "Tomato, mozzarella, truffle paste, hot salami, Mascarpone, mushroom"],
+                ["Genovese", "Pesto, sundried tomato, zucchini flower"],
+                ["Rustica", "Tomato, mozzarella, olives, ham, hot salami, pork sausage, onion"],
+                ["San Daniele", "Tomato, mozzarella, prosciutto, rocket, parmesan"],
+                ["Bufala", "Tomato, mozzarella, bufala, sundried tomato, parmesan"],
+                ["Bella", "tomato mozzarella mushrooms smoked cheese, pepperoni"],
+              ]),[])
+
+const [pizzaRot, setPizza] = useState(() => pizzaRotation.slice(0, REVIEWS_TO_SHOW));
+
+    useEffect(()=>{
+        const shuffled = [...pizzaRotation].sort(() => 0.5 - Math.random());
+         setPizza(shuffled.slice(0, REVIEWS_TO_SHOW));
+        //  return shuffled.slice(0, count);
+    },[pizzaRotation])
+
   return (
     <section id="menu" className="mx-auto max-w-7xl px-4 py-20">
         <div className="grid md:grid-cols-2 gap-12 items-start md:h-[55vh]">
@@ -14,14 +43,9 @@ function MenuSec() {
                     transition={{ duration: 0.4 }}
            className=''>
             <h2 className="font-serif text-3xl text-stone-200 sm:text-4xl">Menu highlights</h2>
-            <p className="mt-3 text-stone-300">A rotating selection of classics and seasonal specials. Vegetarian options available on request.</p>
+            <p className="mt-3 text-stone-300">A selection of most requested best pizzas. Vegetarian gluten‑free optionsavailable on request.</p>
             <ul className="mt-6 space-y-3 text-stone-200">
-              {[
-                ["Margherita", "San Marzano, fior di latte, basil"],
-                ["Diavola", "Spianata piccante, fior di latte, chilli"],
-                ["Prosciutto e Rucola", "Prosciutto, rocket, parmigiano"],
-                ["Funghi", "Mushroom mix, thyme, fior di latte"],
-              ].map(([name, desc]) => (
+              {pizzaRot.map(([name, desc]) => (
                 <li key={name} className="flex items-start gap-3">
                   <span className="mt-1">🍕</span>
                   <div>
@@ -31,7 +55,7 @@ function MenuSec() {
                 </li>
               ))}
             </ul>
-            <a href="../pages/menu" className=" mt-16 ml-6 inline-flex items-center rounded-2xl px-6 py-3 bg-white/90 text-stone-900 hover:bg-white">View menu</a>
+            <Link href="../pages/menu" className=" mt-16 ml-6 inline-flex items-center rounded-2xl px-6 py-3 bg-white/90 text-stone-900 hover:bg-white">View menu</Link>
           </motion.div>
           
           <motion.div initial={{ opacity: 0, y: 30 }}
