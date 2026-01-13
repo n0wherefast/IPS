@@ -50,8 +50,8 @@ export const refForm = [
         min:'0'
       },
       {
-        id:'number of kids under 6-12',
-        name:'numberOfKidsUnder',
+        id:'from 6 up to 10 years',
+        name:'from6upto10years',
         type:'number',
         min:'0'
       },

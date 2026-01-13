@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
-import data from "./data.json";
+import {dataLink} from "./data";
 export const dynamic = 'force-dynamic'
 
 export async function GET() {
-  return NextResponse.json(data);
+  return NextResponse.json(dataLink);
 }

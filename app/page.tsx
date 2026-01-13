@@ -23,12 +23,17 @@ const links = await getLinkData()
     <TopBar/>
     <Navbar linksProp={links[0]}/>
     <Home/>
+     <div className="pt-20" id="menu"/>
     <TrustBar/>
     <MenuSec/>
+    <div className="pt-3" id="packages"/>
     <Packages/>
+    <div className="pt-5" id="gallery"/>
     <Gallery/>
+    <div className="pt-5" id="about"/>
     <About/>
     <Reviews/>
+    <div className="pt-8" id="contact"/>
     <Contact />
   </main>
   );

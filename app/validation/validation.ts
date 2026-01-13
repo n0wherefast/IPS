@@ -9,5 +9,5 @@ export const validationSchema = yup.object().shape({
           phone: yup.number().required(),
           address:yup.string().required(),
           numberOfAdults:yup.number().positive((e)=>console.log(e)).integer().required(),
-          numberOfKidsUnder10:yup.number().positive((e)=>console.log(e)).integer().required(),
+          from6upto10years:yup.number().positive((e)=>console.log(e)).integer().required(),
 })

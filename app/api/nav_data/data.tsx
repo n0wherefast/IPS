@@ -1,9 +1,17 @@
-[
+
+ const handleHomeClick = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+ }
+export const dataLink = [
   [
     {
     "id":0,
     "name":"Home",
-    "path":"#home",
+    "path": "",
+    "onClick" : handleHomeClick(),
     "delay":0.3,
     "isMenuPage": false
     },

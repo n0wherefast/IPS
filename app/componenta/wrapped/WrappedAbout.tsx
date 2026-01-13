@@ -6,7 +6,7 @@ import {motion} from 'framer-motion'
 function WrappedAbout({aboutProp}:any) {
     console.log(aboutProp.image)
   return (
-     <section id="about" className="bg-white border-y border-stone-200">
+     <section  className="bg-white border-y border-stone-200">
         <motion.div initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}

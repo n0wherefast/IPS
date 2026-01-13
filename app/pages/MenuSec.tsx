@@ -34,7 +34,7 @@ const [pizzaRot, setPizza] = useState(() => pizzaRotation.slice(0, REVIEWS_TO_SH
     },[pizzaRotation])
 
   return (
-    <section id="menu" className="mx-auto max-w-7xl px-4 py-20">
+    <section  className="mx-auto max-w-7xl px-4 py-20">
         <div className="grid md:grid-cols-2 gap-12 items-start md:h-[55vh]">
           <motion.div
           initial={{ opacity: 0, y: 30 }}
