@@ -124,5 +124,11 @@
     "title": "truck",
     "alt": "truck image",
     "image": "/truck.webp"
+  },
+  {
+    "id": 21,
+    "title": "truck",
+    "alt": "fried ring calamari image",
+    "image": "/calamari.webp"
   }
 ]

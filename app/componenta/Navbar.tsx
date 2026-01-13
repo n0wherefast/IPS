@@ -5,6 +5,7 @@ import {IoMdClose} from 'react-icons/io'
 import Image from 'next/image'
 import Link from 'next/link'
 import Social from './Social'
+import { refresh } from 'next/cache'
 
 export interface CONTEXT {
   isDarkMode?:boolean,
@@ -43,7 +44,12 @@ function Navbar({linksProp}:any) {
 
   }, []);
 
-  
+  const handleHomeClick = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+};
   return (
     <header  className = { isOpen?` p-2 transition-all duration-500 ease-in-out bg-slate-100  text-black  sticky top-0 z-10  ` : 
                                   `transition-all duration-500 ease-in-out h-20 flex items-center bg-slate-100  text-black  sticky top-0 z-10`}>
@@ -81,7 +87,7 @@ function Navbar({linksProp}:any) {
            {
            linksProp.map((link:any,id:any)=>{
               return(
-              <Link key={id} href={link.path}className="mr-5 transition-all ease-in hover:text-red-500 hover:font-extrabold hover:text-lg">
+              <Link key={id} href={link.path} onClick={()=>handleHomeClick()} className="mr-5 transition-all ease-in hover:text-red-500 hover:font-extrabold hover:text-lg">
                 {link.name}
               </Link>
               )

@@ -13,7 +13,7 @@ function WrappedPackage({packProps}:any) {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.8 }} key={id} className="rounded-2xl bg-white border border-rose-500 p-6 shadow-sm">
-                <div className="flex items-baseline justify-between">
+                <div className="flex items-baseline justify-between"> 
                   <h3 className="text-xl font-semibold">{p.name}</h3>
                   <span className="text-sm text-stone-600">{p.price}</span>
                 </div>
@@ -25,7 +25,7 @@ function WrappedPackage({packProps}:any) {
               </motion.div>
             ))}
           </div>
-           <div className="mx-auto max-w-7xl px-4 py-8 grid grid-cols-2 sm:grid-cols-5 gap-6 text-center text-md font-medium text-stone-700   ">
+           <div className="mx-auto mt-5 max-w-7xl px-4 pt-5 grid grid-cols-2 sm:grid-cols-5 gap-6 text-center text-md font-medium text-stone-700   ">
           {[
             "Insalate extra",
             "Waiter available for 220$ extra",
@@ -33,7 +33,7 @@ function WrappedPackage({packProps}:any) {
             "packages Special, A-B Minimum party spend $1000",
             "packages C-D Minimum party spend $1300",
           ].map((t) => (
-            <div key={t} className=" flex items-center justify-center px-2 py-2 rounded-xl bg-stone-50 border border-rose-500">{t}</div>
+            <div key={t} className=" flex items-center justify-center px-1 py-1 rounded-xl bg-stone-50 border border-rose-500">{t}</div>
           ))}
         </div>
         </div>

@@ -2,7 +2,7 @@
 [
   {
    "id":0,
-   "name":"A",
+   "name":"Package A",
    "price": "from $28 pp",
    "items": [
       "30 min setup ","3 hours service",
@@ -14,7 +14,7 @@
 
   {
    "id":1,
-   "name":"B",
+   "name":"Package B",
    "price": "from $32 pp",
    "items": [
       "1 hour setup ","3 hours service",
@@ -27,7 +27,7 @@
 
   {
    "id":2,
-   "name":"C",
+   "name":"Package C",
    "price": "from $35 pp",
    "items": [
       "1 hour ","3 hours service",
@@ -38,7 +38,7 @@
 
   {
   "id":3,
-  "name":"D",
+  "name":"Package D",
   "price": "from $45 pp",
   "items": [
       "1 hour ","3 hours service",

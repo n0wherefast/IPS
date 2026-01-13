@@ -10,12 +10,12 @@ function WrappedAbout({aboutProp}:any) {
         <motion.div initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.8 }} className="mx-auto max-w-7xl md:h-[60vh] px-4 py-16 grid md:grid-cols-2 gap-10 items-center">
+                    transition={{ duration: 0.8 }} className="mx-auto max-w-[80vw] md:h-auto px-4 py-16 grid md:grid-cols-2 gap-10 items-center">
           <div>
-            <Image src={aboutProp.image} height={500} width={500} alt="Our pizzaiolo by the oven" className="rounded-2xl border border-stone-200 w-full object-cover h-96"/>
+            <Image loading='lazy' blurDataURL={aboutProp.image} src={aboutProp.image} height={1000} width={1000} alt="Our pizzaiolo by the oven" className="rounded-2xl border border-stone-200 w-full object-cover h-auto"/>
           </div>
           <div>
-            <h2 className="font-serif text-3xl sm:text-4xl">Tradition, fire and good company</h2>
+            <h2 className="font-serif text-3xl sm:text-6xl">Tradition, fire and good company</h2>
             <p className="mt-4 text-stone-700">Born in Italy, baked in Sydney. We ferment our dough for up to 48 hours for a light, airy crust, and cook at 450°C in our mobile wood‑fired oven. We bring the pizzeria experience to your venue.</p>
             <ul className="mt-6 space-y-2 text-stone-700">
               {[

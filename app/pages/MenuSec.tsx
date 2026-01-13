@@ -43,7 +43,7 @@ const [pizzaRot, setPizza] = useState(() => pizzaRotation.slice(0, REVIEWS_TO_SH
                     transition={{ duration: 0.4 }}
            className=''>
             <h2 className="font-serif text-3xl text-stone-200 sm:text-4xl">Menu highlights</h2>
-            <p className="mt-3 text-stone-300">A selection of most requested best pizzas. Vegetarian gluten‑free optionsavailable on request.</p>
+            <p className="mt-3 text-stone-300">A selection of most requested best pizzas. Vegetarian gluten‑free options is available on request.</p>
             <ul className="mt-6 space-y-3 text-stone-200">
               {pizzaRot.map(([name, desc]) => (
                 <li key={name} className="flex items-start gap-3">
@@ -65,7 +65,7 @@ const [pizzaRot, setPizza] = useState(() => pizzaRotation.slice(0, REVIEWS_TO_SH
                      className="grid grid-cols-2 gap-4">
             {/* Replace with real dish images */}
             {["/pizzas (2).webp","/cannoli-2.webp","/hotchips.webp","/arancini2.webp"].map((src) => (
-              <Image height={500} width={500} key={src} src={src} alt="Pizza" className="rounded-2xl border border-stone-200 object-cover w-full h-40 sm:h-56"/>
+              <Image loading='lazy' blurDataURL={src} height={500} width={500} key={src} src={src} alt="Pizza" className="rounded-2xl border border-stone-200 object-cover w-full h-40 sm:h-56"/>
             ))}
           </motion.div>
         </div>

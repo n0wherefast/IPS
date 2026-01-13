@@ -6,9 +6,9 @@ function WrappedHero({heroProp}:any) {
     console.log("HERO:", heroProp ) 
   return (
     <>
-      <section id='home' className="relative isolate overflow-hidden h-[90vh] md:h-[80vh]">
+      <section className="relative isolate overflow-hidden h-[90vh] md:h-[95vh]">
           <div className="absolute inset-0 -z-10">
-            <Image height={1000} width={1000} src={heroProp.image} alt="Wood-fired pizza from our mobile oven" className="h-full w-full object-cover opacity-90" />
+            <Image loading='lazy' blurDataURL={heroProp.image} height={1000} width={1000} src={heroProp.image} alt="Wood-fired pizza from our mobile oven" className="h-full w-full object-cover opacity-90" />
             <div className="absolute inset-0 bg-gradient-to-t from-stone-950/60 via-stone-900/20 to-transparent" />
           </div>
           <div className="mx-auto max-w-7xl px-4 py-28 sm:py-40">
