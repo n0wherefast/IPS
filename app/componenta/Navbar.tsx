@@ -43,7 +43,14 @@ function Navbar({linksProp}:any) {
     };
 
   }, []);
-
+const handleNavClick = (path: string) => {
+  if (path === "#home") {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  } else {
+    const el = document.querySelector(path);
+    el?.scrollIntoView({ behavior: "smooth" });
+  }
+};
   
   return (
     <header  className = { isOpen?` p-2 transition-all duration-500 ease-in-out bg-slate-100  text-black  sticky top-0 z-10  ` : 
@@ -82,7 +89,7 @@ function Navbar({linksProp}:any) {
            {
            linksProp.map((link:any,id:any)=>{
               return(
-              <Link key={id} href={link.path} onClick={()=>link.onClick}  className="mr-5 transition-all ease-in hover:text-red-500 hover:font-extrabold hover:text-lg">
+              <Link key={id} href={link.path} onClick={()=>handleNavClick(link.path)}  className="mr-5 transition-all ease-in hover:text-red-500 hover:font-extrabold hover:text-lg">
                 {link.name}
               </Link>
               )
