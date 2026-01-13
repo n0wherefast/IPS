@@ -5,7 +5,7 @@ import {IoMdClose} from 'react-icons/io'
 import Image from 'next/image'
 import Link from 'next/link'
 import Social from './Social'
-import { refresh } from 'next/cache'
+
 
 export interface CONTEXT {
   isDarkMode?:boolean,
@@ -69,13 +69,13 @@ const handleNavClick = (path: string) => {
                   height={100}
                   /> 
                 
-                <p className="title-font font-medium md:mb-0">
+                <p className=" font-medium md:mb-0">
                   <Link href="#home" className="ml-2 text-md sm:text-3xl font-semibold">
                      Italian Pizza Catering
                   </Link>
                 </p>
                 
-                <button className= {isOpen? `ml-16 flex rotate-180 md:hidden text-sky-500 transition-all ease-in duration-200`:`ml-16 hover:bg-sky-900 p-2 rounded-full rotate-0 flex md:hidden text-white transition-all ease-in `  }
+                <button id='button menu' aria-label='button menu' className= {isOpen? `ml-16 flex rotate-180 md:hidden text-sky-500 transition-all ease-in duration-200`:`ml-16 hover:bg-sky-900 p-2 rounded-full rotate-0 flex md:hidden text-white transition-all ease-in `  }
                         onClick={()=>(setIsOpen(!isOpen) ,setIsClick(false))}
                 >
                 { isOpen ? <IoMdClose size={30} /> :   <FaBars size={25} color='black'/>}  
@@ -85,16 +85,19 @@ const handleNavClick = (path: string) => {
         </div>
         <nav onClick={()=>setIsOpen(false)} className={isOpen? ` gap-2  w-full md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-600	flex  flex-col md:flex-row items-start text-base justify-start  ` :
                                  ` hidden  md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-600	md:flex  items-center text-base justify-center`}>
-
+          <ul className='flex flex-col md:flex-row gap-2'>
            {
            linksProp.map((link:any,id:any)=>{
               return(
-              <Link key={id} href={link.path} onClick={()=>handleNavClick(link.path)}  className="mr-5 transition-all ease-in hover:text-red-500 hover:font-extrabold hover:text-lg">
-                {link.name}
-              </Link>
+               <li key={id}>
+                <Link  href={link.path} onClick={()=>handleNavClick(link.path)}  className="mr-5 transition-all ease-in hover:text-red-500 hover:font-extrabold hover:text-lg">
+                  {link.name}
+                </Link>
+              </li>
               )
             })
            }
+           </ul>
                  
         </nav>
         

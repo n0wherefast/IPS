@@ -106,7 +106,7 @@ function WrappedFrom({formData}:any) {
           </div>
           <div className="rounded-xl flex gap-4 px-3 py-2 outline-none focus:ring-2 focus:ring-rose-500">
             <label   htmlFor="termsAndCondition">I Read Terms and Condition</label>
-            <input id='terms' name="terms" type="checkbox" required />
+            <input id='terms' name="termsAndCondition" type="checkbox" required />
           </div>
             <div className="sm:col-span-2">
               <button type="submit" className="w-full sm:w-auto rounded-2xl bg-rose-600 px-6 py-3 text-white shadow hover:shadow-lg">Send enquiry</button>

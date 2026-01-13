@@ -18,12 +18,12 @@ export default async function HomePage() {
 
 const links = await getLinkData() 
   return (
-    <main className="text-gray-700 bg-emerald-950 body-font">
+    <main className="text-gray-700 bg-teal-950 body-font">
     <div id='home'  />
     <TopBar/>
     <Navbar linksProp={links[0]}/>
     <Home/>
-     <div className="pt-20" id="menu"/>
+     {/* <div className="pt-20" id="menu"/> */}
     <TrustBar/>
     <MenuSec/>
     <div className="pt-3" id="packages"/>

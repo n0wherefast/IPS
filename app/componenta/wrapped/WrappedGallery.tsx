@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import Link from 'next/link';
 import { SlSocialInstagram } from "react-icons/sl";
 
-const img_TO_SHOW = 12;
+const img_TO_SHOW = 8;
 function WrappedGallery({galleryImg}:any) {
 
   
@@ -20,7 +20,7 @@ function WrappedGallery({galleryImg}:any) {
   return (
     <section  className="mx-auto md:w-[90vw]  md:h-auto px-4 py-6 md:py-16 ">
             <div className="flex flex-col md:flex-row md:items-end justify-between">
-              <h2 className="font-serif text-3xl sm:text-6xl text-stone-200">Gallery</h2>
+              <h2 className="font-sans text-3xl sm:text-6xl text-stone-200">Gallery</h2>
               <Link href={'https://www.instagram.com/italianpizzasyd?igsh=NmxsOGVmeWQ2dXVv'} className=" transition-all  text-stone-200 hover:text-rose-500 text-md flex items-center gap-2 h-4">
                See More On Instagram Page <SlSocialInstagram/> 
               </Link>

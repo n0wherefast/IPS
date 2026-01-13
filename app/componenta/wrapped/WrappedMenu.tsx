@@ -22,7 +22,7 @@ const links = await getLinkData()
                                     md:bg-[left_100%_center] md:bg-[length:60%_auto]  md:bg-[url(/bg-menu-2.png)] md:bg-no-repeat ">
         <div className=" grid md:grid-cols-2 gap-12 items-start md:h-full md:pl-28 pl-10 ">
           <div className=''>
-            <h2 className="font-serif text-3xl md:text-6xl">Menu</h2>
+            <h2 className="font-sans text-3xl md:text-6xl">Menu</h2>
             <p className="mt-3 text-stone-300">A selection of our Classics and seasonal Specials and Arancini . Vegetarian options available on request.</p>
             <div className='grid md:grid-cols-3 md:w-[60vw] gap-10'>
                <ul className="mt-6 space-y-3 text-stone-300">
