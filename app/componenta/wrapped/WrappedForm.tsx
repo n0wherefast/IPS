@@ -13,7 +13,7 @@ interface IForm{
   min?:string | any;
   max?:string | any;
 }
- const webkey = process.env.NEXT_PUBLIC_WEB_KEY
+ const webkey = process.env.NEXT_PUBLIC_WEB
  console.log(webkey) 
 
 function WrappedFrom({formData}:any) {
