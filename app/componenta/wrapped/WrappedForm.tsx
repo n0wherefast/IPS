@@ -14,7 +14,7 @@ interface IForm{
 }
 
 const webkey = process.env.webKey
-
+console.log(webkey)
 function WrappedFrom({formData}:any) {
   
    
@@ -41,7 +41,7 @@ function WrappedFrom({formData}:any) {
           Accept: "application/json",
       }, 
       body: JSON.stringify({
-          access_key: webkey,
+          access_key: webkey ,
          ...formData
       }),
   });

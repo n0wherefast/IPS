@@ -43,7 +43,7 @@ const [pizzaRot, setPizza] = useState(() => pizzaRotation.slice(0, REVIEWS_TO_SH
                     transition={{ duration: 0.4 }}
            className=''>
             <h2 className="font-sans text-3xl text-stone-200 sm:text-5xl">Menu highlights</h2>
-            <p className="mt-3 text-stone-300">A selection of most requested best pizzas. Vegetarian gluten‑free options is available on request.</p>
+            <p className="mt-3 text-stone-300">A selection of most requested. Vegan, gluten‑free options are available on request.</p>
             <ul className="mt-6 space-y-3 text-stone-200">
               {pizzaRot.map(([name, desc]) => (
                 <li key={name} className="flex items-start gap-3">

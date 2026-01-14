@@ -11,7 +11,7 @@ export const dataLink = [
     },
     {
     "id":1,
-    "name":"Package",
+    "name":"Packages",
     "path":"#packages",
     "delay":0.4
     },

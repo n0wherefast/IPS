@@ -47,8 +47,8 @@ const handleNavClick = (path: string) => {
   if (path === "#home") {
     window.scrollTo({ top: 0, behavior: "smooth" });
   } else {
-    const el = document.querySelector(path);
-    el?.scrollIntoView({ behavior: "smooth" });
+    const el = document.querySelector(path); 
+    el?.scrollIntoView({ behavior: "smooth" }); 
   }
 };
   

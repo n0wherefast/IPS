@@ -13,7 +13,7 @@ function Social() {
                     <SlSocialInstagram/> 
                     </Link> 
                 
-                    <Link aria-label='whatsapp' className='text-2xl hover:text-emerald-500 transition-all' href={'https://wa.me/qr/WEOOT3HPLJOVG1 '}>
+                    <Link aria-label='whatsapp' className='text-2xl hover:text-emerald-500 transition-all' href={'https://wa.me/message/QTAGOJDBVW3FI1'}>
                       <FaWhatsapp/>
                     </Link>
             </div>

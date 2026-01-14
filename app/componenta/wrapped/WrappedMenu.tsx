@@ -23,10 +23,11 @@ const links = await getLinkData()
         <div className=" grid md:grid-cols-2 gap-12 items-start md:h-full md:pl-28 pl-10 ">
           <div className=''>
             <h2 className="font-sans text-3xl md:text-6xl">Menu</h2>
-            <p className="mt-3 text-stone-300">A selection of our Classics and seasonal Specials and Arancini . Vegetarian options available on request.</p>
+            <p className="mt-3 text-stone-300">A selection of our traditionals, Premium and Arancini .Gluten free bases available for 5$ each. </p>
+            <p className=" text-stone-300">Extra salads available upon discussion</p>
             <div className='grid md:grid-cols-3 md:w-[60vw] gap-10'>
                <ul className="mt-6 space-y-3 text-stone-300">
-                <h2 className='font-serif text-3xl md:text-4xl'>Classic</h2>
+                <h2 className='font-serif text-3xl md:text-4xl'>Traditional</h2>
               {menuProp[0].map((pizza:any,id:number) => (
                 <li key={id} className="flex items-start gap-3">
                   <span className="mt-1">🍕</span>
@@ -38,7 +39,7 @@ const links = await getLinkData()
               ))}
             </ul>
             <ul className="mt-6 space-y-3 text-stone-300">
-                <h2 className='font-serif text-3xl md:text-4xl'>Special</h2>
+                <h2 className='font-serif text-3xl md:text-4xl'>Premium</h2>
               {menuProp[1].map((pizza:any,id:number) => (
                 <li key={id} className="flex items-start gap-3">
                   <span className="mt-1">🍕</span>

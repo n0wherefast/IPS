@@ -16,7 +16,9 @@ function WrappedAbout({aboutProp}:any) {
           </div>
           <div>
             <h2 className="font-serif text-3xl sm:text-6xl">Tradition, fire and good company</h2>
-            <p className="mt-4 text-stone-700">Born in Italy, baked in Sydney. We ferment our dough for up to 48 hours for a light, airy crust, and cook at 450°C in our mobile wood‑fired oven. We bring the pizzeria experience to your venue.</p>
+            <h3 className="my-2 font-serif text-3xl sm:text-2xl font-medium">Born in Italy, baked in Sydney.</h3>
+            <p>My name is Alessandro and I&apos;m from Sicily. I started this job when I was a kid with a lot of passion and sacrificies.   Now I&apos;m here to bring a taste of Italy directly to your place We offer authentic Italian Pizza Mobile wood fire oven to your door for wide range of function and events We are here to make your day special such as birthday,
+               family gather, teambonding, wedding etc.</p>
             <ul className="mt-6 space-y-2 text-stone-700">
               {[
                 "Fully insured and council compliant",
