@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 function TrustBar() {
   return (
-    <section id="menu" className="bg-white border-y border-stone-200">
+    <section id="menu" className=" border-y border-stone-200">
        <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -19,7 +19,7 @@ function TrustBar() {
             "Locally sourced ingredients",
             "Catering across Sydney",
           ].map((t) => (
-            <div key={t} className="px-3 py-2 rounded-xl bg-stone-50 border border-rose-400">{t}</div>
+            <div key={t} className="px-3 py-2 rounded-xl bg-stone-80 text-white border border-rose-400">{t}</div>
           ))}
         </div>
         </motion.div>

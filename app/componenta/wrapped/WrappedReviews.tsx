@@ -15,7 +15,7 @@ function WrappedReviews({reviews}:any) {
     },[reviews])
    
   return (
-<section id="reviews" className="bg-stone-50 py-20" itemScope itemType="https://schema.org/LocalBusiness">
+<section id="reviews" className="text-stone-50 py-20" itemScope itemType="https://schema.org/LocalBusiness">
             <meta itemProp="name" content="Italian Pizza Sydney" />
 
 

@@ -4,7 +4,7 @@ import {motion} from'framer-motion'
 
 function WrappedPackage({packProps}:any) {
   return (
-     <section  className="bg-stone-100 border-y border-stone-200 text-stone-700">
+     <section  className="border-y border-stone-200 text-stone-700">
         <div className="mx-auto md:max-w-[80vw] px-4 py-16 ">
           <h2 className="font-sans text-3xl sm:text-5xl text-stone-700">Packages</h2>
           <div className="mt-8 grid md:grid-cols-3 gap-6">

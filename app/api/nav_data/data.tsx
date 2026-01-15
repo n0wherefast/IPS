@@ -18,7 +18,7 @@ export const dataLink = [
     {
     "id":2,
     "name":"Menu",
-    "path":"#menu",
+    "path":"../pages/menu",
     "delay":0.6
     },
     {

@@ -53,8 +53,8 @@ const handleNavClick = (path: string) => {
 };
   
   return (
-    <header  className = { isOpen?` p-2 transition-all duration-500 ease-in-out bg-slate-100  text-black  sticky top-0 z-10  ` : 
-                                  `transition-all duration-500 ease-in-out h-20 flex items-center bg-slate-100  text-black  sticky top-0 z-10`}>
+    <header  className = { isOpen?` p-2 transition-all duration-500 ease-in-out bg-zinc-900 text-white sticky top-0 z-10  ` : 
+                                  `transition-all duration-500 ease-in-out h-20 flex items-center bg-zinc-900  text-white  sticky top-0 z-10`}>
 
         <div className={isOpen ? ` min-h-96 transition-all ease-in-out duration-300  container mx-auto flex  p-3 flex-col  md:flex-row justify-around items-center md:justify-start` :
                                  ` h-24 transition-all ease-in-out duration-200  container mx-auto flex  p-3 flex-col  md:flex-row justify-between items-center md:justify-start`}>
@@ -63,8 +63,8 @@ const handleNavClick = (path: string) => {
                 
                   <Image
                   alt="italian pizza catering logo"
-                  className="w-16 h-12 md:w-20 md:h-14"
-                  src='/logo.png'
+                  className=" rounded-2xl w-16 h-12 md:w-20 md:h-14"
+                  src='/logo2.webp'
                   width={100}
                   height={100}
                   /> 
@@ -75,10 +75,10 @@ const handleNavClick = (path: string) => {
                   </Link>
                 </p>
                 
-                <button id='button menu' aria-label='button menu' className= {isOpen? `ml-16 flex rotate-180 md:hidden text-sky-500 transition-all ease-in duration-200`:`ml-16 hover:bg-sky-900 p-2 rounded-full rotate-0 flex md:hidden text-white transition-all ease-in `  }
+                <button id='button menu' aria-label='button menu' className= {isOpen? `ml-16 flex rotate-180 md:hidden text-rose-500 transition-all ease-in duration-200`:`ml-16 hover:bg-sky-900 p-2 rounded-full rotate-0 flex md:hidden text-white transition-all ease-in `  }
                         onClick={()=>(setIsOpen(!isOpen) ,setIsClick(false))}
                 >
-                { isOpen ? <IoMdClose size={30} /> :   <FaBars size={25} color='black'/>}  
+                { isOpen ? <IoMdClose size={30} /> :   <FaBars size={25} color='white'/>}  
                 </button>
 
                 

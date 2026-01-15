@@ -18,7 +18,7 @@ function WrappedHero({heroProp}:any) {
               <div className="mt-8 flex gap-4">
                 <Link href="#contact" className="inline-flex items-center rounded-2xl px-6 py-3 bg-red-600 text-white shadow hover:shadow-lg transition">Get a quote</Link>
                 {/* <Link href="../pages/menu" className="inline-flex items-center rounded-2xl px-6 py-3 bg-white/90 text-stone-900 hover:bg-white">View menu</Link>  */}
-                <Link href="#packages" className="inline-flex items-center rounded-2xl px-6 py-3 bg-white/90 text-stone-900 hover:bg-white">Check our Packages </Link> 
+                <Link href="#packages" className="inline-flex items-center rounded-2xl px-6 py-3 text-white/90 bg-stone-900 hover:text-rose-600 hover:bg-stone-800 transition-all">Check our Packages </Link> 
               </div>
             </div>
           </div>
