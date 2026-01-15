@@ -6,7 +6,7 @@ function WrappedPackage({packProps}:any) {
   return (
      <section  className="border-y border-stone-200 text-stone-700">
         <div className="mx-auto md:max-w-[80vw] px-4 py-16 ">
-          <h2 className="font-sans text-3xl sm:text-5xl text-stone-700">Packages</h2>
+          <h2 className="font-sans text-3xl sm:text-5xl text-stone-100">Packages</h2>
           <div className="mt-8 grid md:grid-cols-3 gap-6">
             {packProps.map((p:any,id:number) => (
               <motion.div initial={{ opacity: 0, y: 30 }}
