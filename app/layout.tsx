@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { ThemeProvider } from "./ThemeProvider/ThemeProvider";
-import Navbar from "./componenta/Navbar";
 import Footer from "./componenta/Footer";
 import IframeGTM from "./GoogleTagManager/IframeGTM";
 import HeadScript from "./GoogleTagManager/HeadScript";
@@ -22,14 +20,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <HeadScript/>
+      </head>
       <body className={inter.className}>
-        {/* <ThemeProvider> */}
-        {/* <Navbar/> */}
-         <HeadScript/>
+         
          <IframeGTM/>
           {children}
         <Footer/>
-        {/* </ThemeProvider> */}
       </body>
     </html>
   );

@@ -4,7 +4,7 @@ import React from 'react'
 import {motion} from 'framer-motion'
 
 function WrappedAbout({aboutProp}:any) {
-    console.log(aboutProp.image)
+ 
   return (
      <section  className=" text-white border-y border-stone-200">
         <motion.div initial={{ opacity: 0, y: 30 }}

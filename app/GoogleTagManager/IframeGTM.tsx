@@ -1,22 +1,19 @@
-'use client'
-import React from 'react'
+const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID;
 
-function IframeGTM() {
-   
+export default function IframeGTM() {
+  if (!GTM_ID) return null;
+
   return (
-    <>
-   <iframe 
-        src="https://www.googletagmanager.com/ns.html?id=GTM-K3DLGQ98"
-        height="0" 
+    <noscript>
+      <iframe
+        src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
+        height="0"
         width="0"
-        style={{'display':'none', 'visibility':'hidden'}} >
-      </iframe> 
-    
-     
-    </>
-  )
+        style={{ display: "none", visibility: "hidden" }}
+      />
+    </noscript>
+  );
 }
 
-export default IframeGTM
 
 
