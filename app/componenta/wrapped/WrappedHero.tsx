@@ -16,9 +16,9 @@ function WrappedHero({heroProp}:any) {
               <h1 className="font-serif text-4xl sm:text-6xl leading-tight">Authentic <p className=' text-amber-300'> <strong>Wood Fired </strong></p> Pizza, crafted in Sydney</h1>
               <p className="mt-4 text-lg sm:text-xl text-stone-100/90">Catering for weddings, corporate and private events. Hand‑stretched dough.</p>
               <div className="mt-8 flex gap-4">
-                <Link href="#contact" className="inline-flex items-center rounded-2xl px-6 py-3 bg-red-600 text-white shadow hover:shadow-lg transition">Get a quote</Link>
+                <Link href="#contact" className="text-sm sm:text-xl inline-flex items-center rounded-2xl px-6 py-3 bg-red-600 text-white shadow hover:shadow-lg transition">Get a quote</Link>
                 {/* <Link href="../pages/menu" className="inline-flex items-center rounded-2xl px-6 py-3 bg-white/90 text-stone-900 hover:bg-white">View menu</Link>  */}
-                <Link href="#packages" className="inline-flex items-center rounded-2xl px-6 py-3 text-white/90 bg-stone-900 hover:text-rose-600 hover:bg-stone-800 transition-all">Check our Packages </Link> 
+                <Link href="#packages" className="text-sm sm:text-xl inline-flex items-center rounded-2xl px-6 py-3 text-white/90 bg-stone-900 hover:text-rose-600 hover:bg-stone-800 transition-all">Check our Packages </Link> 
               </div>
             </div>
           </div>
