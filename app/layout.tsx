@@ -4,8 +4,9 @@ import "./globals.css";
 import Footer from "./componenta/Footer";
 import IframeGTM from "./GoogleTagManager/IframeGTM";
 import HeadScript from "./GoogleTagManager/HeadScript";
-import { GoogleTagManager } from "@next/third-parties/google";
+// import { GoogleTagManager } from "@next/third-parties/google";
 import JsonLd from "./componenta/JsonLd";
+// import Script from "next/script";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -70,15 +71,15 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const gtmId = process.env.NEXT_PUBLIC_GTM_ID;
+  // const gtmId = process.env.NEXT_PUBLIC_GTM_ID;
   return (
     <html lang="en">
       <head>
-        {/* <HeadScript/> */}
-        {gtmId && <GoogleTagManager gtmId={gtmId} />}
+        <HeadScript/>
+        {/* {gtmId && <GoogleTagManager gtmId={gtmId} />} */}
       </head>
       <body className={inter.className}>
-         {/* <IframeGTM/> */}
+         <IframeGTM/>
          <JsonLd />
           {children}
         <Footer/>
