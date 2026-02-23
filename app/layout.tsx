@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Italian Pizza Catering Sydney – Authentic Italian Pizza for Events",
     description:
-      "Catering di pizza italiana autentica a Sydney. Perfetto per matrimoni, eventi aziendali e feste private. Ingredienti freschi e tradizione italiana.",
+      "Authentic Italian pizza catering in Sydney. Perfect for weddings, corporate events, and private parties. Fresh ingredients and Italian tradition.",
     url: "https://www.italianpizzacatering.com.au/",
     siteName: "Italian Pizza Catering",
     locale: "en_AU",
@@ -45,9 +45,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Italian Pizza Catering Sydney | Pizza Italiana Autentica",
+    title: "Italian Pizza Catering Sydney | Authentic Italian Pizza",
     description:
-      "Pizza italiana autentica per eventi a Sydney. Catering premium con ingredienti italiani e impasto a lunga lievitazione.",
+      "Authentic Italian pizza for events in Sydney. Premium catering with Italian ingredients and slow-rising dough.",
    
   },
   robots: {

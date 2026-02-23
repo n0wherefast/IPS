@@ -13,7 +13,7 @@ async function Contact() {
   const form = await getForm()
   return (
     <>
-      <IframeGTM />
+      {/* <IframeGTM /> */}
       <WrappedForm formData = {form} /> 
     </>
   )
