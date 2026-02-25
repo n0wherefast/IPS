@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Footer from "./componenta/Footer";
-import { GoogleTagManager } from "@next/third-parties/google";
+import { GoogleTagManager, GoogleAnalytics } from "@next/third-parties/google";
 import JsonLd from "./componenta/JsonLd";
 
 
@@ -72,8 +72,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <GoogleTagManager gtmId="GTM-NLXNKSM6" />
         <JsonLd />
+        <GoogleTagManager gtmId="GTM-NLXNKSM6" />
+        <GoogleAnalytics gaId="G-29BMJ1PT5L" />
       </head>
       <body className={inter.className}>
           {children}
