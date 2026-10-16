@@ -1,0 +1,274 @@
+[
+  {
+    "id": "k1",
+    "name": "Classic",
+    "description": "Authentic Sicilian style - Ragu(Bolognese), Cheese",
+    "price": 5,
+    "category": "ARANCINI",
+    "image": "/wep_files/placeholder-food.svg"
+  },
+  {
+    "id": "k2",
+    "name": "Truffle and porcini",
+    "description": "Truffle and Porcini, Mushroom 🍃",
+    "price": 4.5,
+    "category": "ARANCINI",
+    "image": "/wep_files/placeholder-food.svg"
+  },
+  {
+    "id": "k3",
+    "name": "Basil pesto",
+    "description": "Basil pesto and Smoked cheese 🍃",
+    "price": 4.5,
+    "category": "ARANCINI",
+    "image": "/wep_files/placeholder-food.svg"
+  },
+  {
+    "id": "k4",
+    "name": "Four cheese",
+    "description": "Mozzarella, Gorgonzola, Smoked cheese, Parmesan 🍃",
+    "price": 4.5,
+    "category": "ARANCINI",
+    "image": "/wep_files/placeholder-food.svg"
+  },
+  {
+    "id": "k5",
+    "name": "Caponata",
+    "description": "Fried vegetables(Eggplant, Potato, Onion, Capsicum), Pecorino cheese 🍃",
+    "price": 60,
+    "category": "ENTRÉE",
+    "image": "/wep_files/placeholder-food.svg"
+  },
+  {
+    "id": "k6",
+    "name": "Bruschetta",
+    "description": "House made bread, Tomato, Galic, Basil, Oregano, EV olive oil 🍃",
+    "price": 3.5,
+    "category": "ENTRÉE",
+    "image": "/wep_files/placeholder-food.svg"
+  },
+  {
+    "id": "k7",
+    "name": "Salmon Bruschetta",
+    "description": "House made bread, Smoked salmom, cream cheese,  Capers, Spring onion",
+    "price": 4,
+    "category": "ENTRÉE",
+    "image": "/wep_files/placeholder-food.svg"
+  },
+  {
+    "id": "k8",
+    "name": "Braised cauliflower",
+    "description": "Braised cauliflower in red wine 🍃",
+    "price": 60,
+    "category": "ENTRÉE",
+    "image": "/wep_files/placeholder-food.svg"
+  },
+  {
+    "id": "k9",
+    "name": "Parmigiana",
+    "description": "Fried eggplant, Provolone cheese, Ham, Boiled egg, Parmesan",
+    "price": 10,
+    "category": "ENTRÉE",
+    "image": "/wep_files/placeholder-food.svg"
+  },
+  {
+    "id": "k10",
+    "name": "Grilled egg plant",
+    "description": "Grilled eggplant with Sicilian dressing 🍃",
+    "price": 5,
+    "category": "ENTRÉE",
+    "image": "/wep_files/placeholder-food.svg"
+  },
+  {
+    "id": "k11",
+    "name": "Grilled capsicum salad",
+    "description": "Grilled capsicum salad with Italian dressing 🍃",
+    "price": 40,
+    "category": "ENTRÉE",
+    "image": "/wep_files/placeholder-food.svg"
+  },
+  {
+    "id": "k12",
+    "name": "Garden",
+    "description": "Mixed greens, Onion, Tomato, EV olive oil, Basamic vinegar 🍃",
+    "price": 2,
+    "category": "SALAD",
+    "image": "/wep_files/placeholder-food.svg"
+  },
+  {
+    "id": "k13",
+    "name": "Rocket and Pear",
+    "description": "Rocket, Pear, Parmesan, EV olive oil, Basamic vinegar 🍃",
+    "price": 2.5,
+    "category": "SALAD",
+    "image": "/wep_files/placeholder-food.svg"
+  },
+  {
+    "id": "k14",
+    "name": "Greek",
+    "description": "Feta cheese, Cucumber, Tomato, Olive, Onion, Oregano, EV olive oil, Basamic vinegar 🍃",
+    "price": 2.5,
+    "category": "SALAD",
+    "image": "/wep_files/placeholder-food.svg"
+  },
+  {
+    "id": "k15",
+    "name": "Lasagna",
+    "description": "Lasagna sheet, Pork and veal ragu, Bechamel, Provelone cheese, Parmesan",
+    "price": 10,
+    "category": "PASTA",
+    "image": "/wep_files/placeholder-food.svg"
+  },
+  {
+    "id": "k16",
+    "name": "Pasta al forno",
+    "description": "Penne, Provelone cheese, Ham, Fried eggplant, Boiled egg, Parmesan",
+    "price": 10,
+    "category": "PASTA",
+    "image": "/wep_files/placeholder-food.svg"
+  },
+  {
+    "id": "k17",
+    "name": "Cannelloni",
+    "description": "Cannelloni, Spinich, Ricotta 🍃",
+    "price": 10,
+    "category": "PASTA",
+    "image": "/wep_files/placeholder-food.svg"
+  },
+  {
+    "id": "k18",
+    "name": "Gnocchi Boscaiola",
+    "description": "Gnocchi, Ham, Mushroom, Cream",
+    "price": 12,
+    "category": "PASTA",
+    "image": "/wep_files/placeholder-food.svg"
+  },
+  {
+    "id": "k19",
+    "name": "Gnocchi quattro formaggi",
+    "description": "Gnocchi, Mozzarella, Gorgonzola, Smoked cheese, Parmesan 🍃",
+    "price": 12,
+    "category": "PASTA",
+    "image": "/wep_files/placeholder-food.svg"
+  },
+  {
+    "id": "k20",
+    "name": "Polpette al sugo",
+    "description": "Pork and veal meatball, Ragu 3 meat balls",
+    "price": 13,
+    "category": "MAIN",
+    "image": "/wep_files/placeholder-food.svg"
+  },
+  {
+    "id": "k21",
+    "name": "Involtini",
+    "description": "Veal, Provolone cheese, Bread cram, EV olive oil 6 pieces in 1 skewer",
+    "price": 18,
+    "category": "MAIN",
+    "image": "/wep_files/placeholder-food.svg"
+  },
+  {
+    "id": "k22",
+    "name": "Salsiccia e Patate al forno",
+    "description": "Spicy sausage, Potato, Tomato sause, Pecorino cheese 2and half sausage",
+    "price": 15,
+    "category": "MAIN",
+    "image": "/wep_files/placeholder-food.svg"
+  },
+  {
+    "id": "k23",
+    "name": "Prosciuitto",
+    "description": "Forcaccia, Prosciuitto, Stracciatella chesse, Sundried tomato, Rocket",
+    "price": 8,
+    "category": "FORCACCIA",
+    "image": "/wep_files/placeholder-food.svg"
+  },
+  {
+    "id": "k24",
+    "name": "Mortadella",
+    "description": "Forcaccia, Mortadella,  Stracciatella chesse, Sundried tomato, Pesto",
+    "price": 8,
+    "category": "FORCACCIA",
+    "image": "/wep_files/placeholder-food.svg"
+  },
+  {
+    "id": "k25",
+    "name": "HAM",
+    "description": "Forcaccia, Ham,  Provolone cheese, Sundried tomato, Truffle mayonase",
+    "price": 7,
+    "category": "FORCACCIA",
+    "image": "/wep_files/placeholder-food.svg"
+  },
+  {
+    "id": "k26",
+    "name": "Salami",
+    "description": "Forcaccia, Salami, Olive, Provolone cheese,Truffle mayonase",
+    "price": 7,
+    "category": "FORCACCIA",
+    "image": "/wep_files/placeholder-food.svg"
+  },
+  {
+    "id": "k27",
+    "name": "Tonno",
+    "description": "Forcaccia, Tuna, Egg, Mayonase, Spring onion, Rocket, Fresh tomato, Provolone chesse",
+    "price": 7,
+    "category": "FORCACCIA",
+    "image": "/wep_files/placeholder-food.svg"
+  },
+  {
+    "id": "k28",
+    "name": "Vegetarian",
+    "description": "Forcaccia, Grilled eggplant,Stracciatella, Sundried tomato, Oiled mushroom, Rocket, Provolone chesse 🍃",
+    "price": 7,
+    "category": "FORCACCIA",
+    "image": "/wep_files/placeholder-food.svg"
+  },
+  {
+    "id": "k29",
+    "name": "Tiramisu",
+    "description": "Egg, Coffee, Sugar, Savoiardi biscuit, Chocolate powder 🍃",
+    "price": 5,
+    "category": "DESSERT",
+    "image": "/wep_files/placeholder-food.svg"
+  },
+  {
+    "id": "k30",
+    "name": "Chocolate panna cotta",
+    "description": "Cream, Milk, Sugar, Gelatine, vanilla, Chocolate syrup 🍃",
+    "price": 5,
+    "category": "DESSERT",
+    "image": "/wep_files/placeholder-food.svg"
+  },
+  {
+    "id": "k31",
+    "name": "Strawberry panna cotta",
+    "description": "Cream, Milk, Sugar, Gelatine, vanilla, Strawberry syrup 🍃",
+    "price": 5,
+    "category": "DESSERT",
+    "image": "/wep_files/placeholder-food.svg"
+  },
+  {
+    "id": "k32",
+    "name": "Fruit cups",
+    "description": "Seasonal fruits mix 🍃",
+    "price": 5,
+    "category": "DESSERT",
+    "image": "/wep_files/placeholder-food.svg"
+  },
+  {
+    "id": "k33",
+    "name": "Ricotta Cannoli",
+    "description": "Ricotta, Milk, Chocolate chips 🍃",
+    "price": 2.5,
+    "category": "DESSERT",
+    "image": "/wep_files/placeholder-food.svg"
+  },
+  {
+    "id": "k34",
+    "name": "Chocolate Cannoli",
+    "description": "Chocolate, Milk, Icing sugar 🍃",
+    "price": 2.5,
+    "category": "DESSERT",
+    "image": "/wep_files/placeholder-food.svg"
+  }
+]

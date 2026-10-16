@@ -32,7 +32,13 @@ export const dataLink = [
     "name":"About",
     "path":"#about",
     "delay":1
-    }
+    },
+    // {
+    // "id":6,
+    // "name":"Kitchen Catering",
+    // "path":"/kitchen-catering",
+    // "delay":0.9
+    // },
   ],
     [
       {
@@ -44,4 +50,4 @@ export const dataLink = [
       }
     
     ]
-]
+] 

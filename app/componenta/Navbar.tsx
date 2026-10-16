@@ -44,11 +44,32 @@ function Navbar({linksProp}:any) {
 
   }, []);
 const handleNavClick = (path: string) => {
-  if (path === "#home") {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  } else {
-    const el = document.querySelector(path); 
-    el?.scrollIntoView({ behavior: "smooth" }); 
+  // If it's an anchor/hash, scroll to that id or to top for #home
+  if (path.startsWith('#')) {
+    if (path === '#home') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      return;
+    }
+    try {
+      const el = document.querySelector(path);
+      el?.scrollIntoView({ behavior: 'smooth' });
+    } catch (e) {
+      // invalid selector — ignore
+    }
+    return;
+  }
+
+  // If it's an absolute route (starts with '/'), let Next's <Link> handle navigation
+  if (path.startsWith('/')) {
+    return;
+  }
+
+  // Otherwise, attempt to treat it as a selector; guard with try/catch
+  try {
+    const el = document.querySelector(path);
+    el?.scrollIntoView({ behavior: 'smooth' });
+  } catch (e) {
+    // ignore invalid selectors
   }
 };
   
@@ -97,6 +118,11 @@ const handleNavClick = (path: string) => {
               )
             })
            }
+           {/* <li>
+             <Link href="/kitchen-catering" onClick={()=>handleNavClick('/kitchen-catering')} className="mr-5 transition-all ease-in hover:text-green-400 hover:font-extrabold hover:text-lg">
+               Kitchen Catering
+             </Link>
+           </li> */}
            </ul>
                  
         </nav>

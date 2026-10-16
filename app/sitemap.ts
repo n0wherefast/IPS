@@ -11,5 +11,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: 'https://www.italianpizzacatering.com.au/pages/menu',
       lastModified: new Date(),
     },
+    {
+      url: 'https://www.italianpizzacatering.com.au/kitchen-catering',
+      lastModified: new Date(),
+    },
   ]
 }
