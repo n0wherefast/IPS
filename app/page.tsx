@@ -9,6 +9,8 @@ import Packages from "./pages/package/page";
 import Reviews from "./componenta/Reviews";
 import TopBar from "./componenta/TopBar";
 
+export const dynamic = 'force-dynamic'
+
 const getLinkData = async () => {
   const apiUrl = process.env.NEXT_PUBLIC_API_URL 
   const response = await fetch(apiUrl+"/api/nav_data",{ next: { revalidate: 36 } });

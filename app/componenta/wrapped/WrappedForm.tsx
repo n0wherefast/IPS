@@ -13,6 +13,10 @@ type FormField = {
   max?: number
 }
 
+type WrappedFormProps = {
+  formData?: FormRespsonse
+}
+
 const formFields: FormField[] = [
   { id: 'name', name: 'name', type: 'text' },
   { id: 'email', name: 'email', type: 'email' },
@@ -24,10 +28,16 @@ const formFields: FormField[] = [
   { id: 'numberOfKidsUnder10', name: 'numberOfKidsUnder10', type: 'number', min: 0 }
 ]
 
-const WrappedForm: React.FC = () => {
+const WrappedForm: React.FC<WrappedFormProps> = ({ formData }) => {
   const formRef = useRef<HTMLFormElement | null>(null)
   const [messagePrefill, setMessagePrefill] = useState('')
   const [packPrefill, setPackPrefill] = useState('')
+
+  useEffect(() => {
+    if (formData?.name) {
+      setMessagePrefill((prev) => prev || formData.name)
+    }
+  }, [formData])
 
   useEffect(()=>{
     try{

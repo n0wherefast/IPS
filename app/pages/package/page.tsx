@@ -1,6 +1,8 @@
 import WrappedPackage from '@/app/componenta/wrapped/WrappedPackage'
 import React from 'react'
 
+export const dynamic = 'force-dynamic'
+
 const getPackage = async () => {
   const apiUrl = process.env.NEXT_PUBLIC_API_URL 
   const response = await fetch(apiUrl+"/api/package",{ next: { revalidate: 36 } });

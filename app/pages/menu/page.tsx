@@ -3,6 +3,7 @@ import WrappedMenu from '@/app/componenta/wrapped/WrappedMenu'
 import Navbar from '@/app/componenta/Navbar'
 import { SkillsResponse } from '../../types/dataTypes';
 
+export const dynamic = 'force-dynamic'
 
 const getMenu = async (): Promise<SkillsResponse> => {
   const apiUrl = process.env.NEXT_PUBLIC_API_URL 

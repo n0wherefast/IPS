@@ -6,6 +6,8 @@ import CartProvider from '../componenta/CartProvider'
 import Cart from '../componenta/Cart'
 import DishList from './DishList'
 
+export const dynamic = 'force-dynamic'
+
 const getKitchen = async () => {
   const apiUrl = process.env.NEXT_PUBLIC_API_URL ?? "";
   const base = apiUrl ? apiUrl : "";

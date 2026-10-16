@@ -3,6 +3,8 @@ import WrappedForm from '../../componenta/wrapped/WrappedForm';
 import { FormRespsonse } from '../../types/dataTypes';
 import IframeGTM from '../../GoogleTagManager/IframeGTM';
 
+export const dynamic = 'force-dynamic'
+
 const getForm = async ():Promise<FormRespsonse> => {
   const apiUrl = process.env.NEXT_PUBLIC_API_URL ;
   const res = await fetch(apiUrl+"/api/form",{next:{revalidate:36}})
