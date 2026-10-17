@@ -28,7 +28,6 @@ export default async function KitchenCateringPage() {
   (items || []).forEach((it: any) => {
     (byCat[it.category] ||= []).push(it);
   });
-
   const links = await getLinkData();
 
   return (
