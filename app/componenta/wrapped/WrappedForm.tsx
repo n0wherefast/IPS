@@ -125,9 +125,9 @@ const WrappedForm: React.FC<WrappedFormProps> = ({ formData }) => {
       time: fd.get('time')?.toString() || '',
       address: fd.get('address')?.toString() || '',
       pack: fd.get('pack')?.toString() || packPrefill || '',
-      terms: fd.get('terms') ? 'accepted' : 'declined',
-      numberOfAdults: fd.get('numberOfAdults')?.toString() || '',
-      numberOfKidsUnder10: fd.get('numberOfKidsUnder10')?.toString() || ''
+      terms: fd.get('terms') === 'on' || fd.get('terms') === 'true' || Boolean(fd.get('terms')),
+      numberOfAdults: Number(fd.get('numberOfAdults')?.toString() || 0),
+      numberOfKidsUnder10: Number(fd.get('numberOfKidsUnder10')?.toString() || 0)
     }
 
     const valid = await validationSchema.isValid(formData)
@@ -136,7 +136,17 @@ const WrappedForm: React.FC<WrappedFormProps> = ({ formData }) => {
       return
     }
 
-    const webkey = (process.env.NEXT_PUBLIC_WEB3FORMS_KEY as string) || ''
+    const webkey = (process.env.NEXT_PUBLIC_WEB3FORMS_KEY || process.env.NEXT_PUBLIC_WEB || '') as string
+
+    if (!webkey) {
+      Swal.fire({
+        icon: 'error',
+        title: 'Form not configured',
+        text: 'Missing Web3Forms access key. Add NEXT_PUBLIC_WEB3FORMS_KEY or NEXT_PUBLIC_WEB in the environment.'
+      })
+      return
+    }
+
     try{
       const response = await fetch('https://api.web3forms.com/submit', {
         mode: 'cors',
