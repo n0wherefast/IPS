@@ -16,9 +16,9 @@ function WrappedHero({heroProp}:any) {
               <h1 className="font-serif text-4xl sm:text-6xl leading-tight">Authentic <p className=' text-amber-300'> <strong>Wood Fired </strong></p> Pizza, crafted in Sydney</h1>
               <p className="mt-4 text-lg sm:text-xl text-stone-100/90">Catering for weddings, corporate and private events. Hand‑stretched dough.</p>
               <div className="mt-8 flex flex-wrap gap-3 sm:gap-4">
-                <Link href="/kitchen-catering" className="text-sm sm:text-lg inline-flex items-center rounded-2xl px-5 py-3 bg-amber-600 text-white shadow hover:bg-amber-700 hover:shadow-lg transition">Kitchen Menu</Link>
+                {/* <Link href="/kitchen-catering" className="text-sm sm:text-lg inline-flex items-center rounded-2xl px-5 py-3 bg-amber-600 text-white shadow hover:bg-amber-700 hover:shadow-lg transition">Kitchen Menu</Link> */}
                 <Link href="#packages" className="text-sm sm:text-lg inline-flex items-center rounded-2xl px-5 py-3 text-white bg-red-600 hover:bg-red-800 transition-all">Pizza Packages</Link>
-                <Link href="/canape-catering#canape-packages-title" className="text-sm sm:text-lg inline-flex items-center rounded-2xl px-5 py-3 bg-emerald-800 text-white shadow hover:bg-emerald-700 hover:shadow-lg transition">Canapé Packages</Link>
+                {/* <Link href="/canape-catering#canape-packages-title" className="text-sm sm:text-lg inline-flex items-center rounded-2xl px-5 py-3 bg-emerald-800 text-white shadow hover:bg-emerald-700 hover:shadow-lg transition">Canapé Packages</Link> */}
               </div>
             </div>
           </div>
