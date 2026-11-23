@@ -24,7 +24,7 @@ export default async function KitchenCateringPage() {
 
   return (
     <>
-      <CateringNavbar />
+      <CateringNavbar currentSection="kitchen" />
       <CartProvider>
       <KitchenLayout heroImage={'/chef2.webp'} title={'Kitchen Catering'} subtitle={'Our expanded kitchen catering menu — same quality, different offering.'} ctaLabel={'Book Catering'} ctaHref={'#kitchen-form'}>
         <DishList byCat={byCat} />

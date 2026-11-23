@@ -12,9 +12,10 @@ type Props = {
   subtitle?: string,
   ctaLabel?: string,
   ctaHref?: string,
+  btnBackground?: string,
 }
 
-export default function KitchenLayout({children, heroImage="/wep_files/placeholder-food.webp", title="Kitchen Catering", subtitle="", ctaLabel, ctaHref}:Props){
+export default function KitchenLayout({children, heroImage="/wep_files/placeholder-food.webp", title="Kitchen Catering", subtitle="", ctaLabel, ctaHref, btnBackground="bg-amber-600"}:Props){
   const handleCtaClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
     if (!ctaHref?.startsWith("#")) return
 
@@ -34,7 +35,7 @@ export default function KitchenLayout({children, heroImage="/wep_files/placehold
             {subtitle ? <p className="mt-2 text-sm sm:text-base md:text-lg text-amber-100">{subtitle}</p> : null}
             {ctaLabel && ctaHref ? (
               <div className="mt-4">
-                <Link href={ctaHref} onClick={handleCtaClick} className="inline-flex items-center bg-amber-600 hover:bg-amber-500 transition-colors text-white px-4 py-2 sm:px-5 sm:py-3 rounded-lg font-medium">
+                <Link href={ctaHref} onClick={handleCtaClick} className={`inline-flex items-center ${btnBackground} hover:brightness-110 transition-[filter] text-white px-4 py-2 sm:px-5 sm:py-3 rounded-lg font-medium`}>
                   {ctaLabel}
                 </Link>
               </div>

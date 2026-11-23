@@ -5,11 +5,21 @@ import Image from 'next/image'
 import {FaBars} from 'react-icons/fa'
 import {IoMdClose} from 'react-icons/io'
 
-export default function CateringNavbar(){
+type CateringNavbarProps = {
+  currentSection: "kitchen" | "canape";
+};
+
+export default function CateringNavbar({
+  currentSection,
+}: CateringNavbarProps) {
   const [isOpen, setIsOpen] = useState(false)
+  const sectionButtonBackground = currentSection === "kitchen"
+    ? "bg-amber-800 hover:bg-amber-600"
+    : "bg-emerald-700 hover:bg-emerald-600"
+  const navbarBackground = currentSection === "kitchen" ? "bg-amber-950" : "bg-emerald-950"
 
   return (
-    <header className="bg-amber-800 text-amber-50 sticky top-0 z-20">
+    <header className={`sticky top-0 z-20 text-stone-50 ${navbarBackground}`}>
       <div className="container mx-auto flex items-center justify-between px-4 h-16">
         <div className="flex items-center gap-3">
           <Image
@@ -24,9 +34,16 @@ export default function CateringNavbar(){
 
         <div className="flex items-center gap-3">
           <nav className="hidden md:flex">
-            <Link href="/" className="inline-flex items-center bg-amber-600 hover:bg-amber-500 transition-colors text-white px-4 py-2 rounded-lg font-medium">
+            <Link href="/" className="inline-flex items-center bg-stone-700 text-white px-4 py-2 rounded-lg font-medium transition-colors hover:bg-stone-600">
               Back to Pizza Section
             </Link>
+            <Link
+              href={currentSection === "canape" ? "/kitchen-catering" : "/canape-catering"}
+              className={`ml-3 inline-flex items-center ${sectionButtonBackground} transition-colors text-white px-4 py-2 rounded-lg font-medium`}
+            >
+              {currentSection === "canape" ? "Kitchen Section" : "Canapé Section"}
+            </Link>
+          
           </nav>
 
           <button aria-label={isOpen ? 'Close menu' : 'Open menu'} onClick={() => setIsOpen(!isOpen)} className="md:hidden p-2 text-amber-50">
@@ -37,10 +54,17 @@ export default function CateringNavbar(){
 
       {/* Mobile dropdown */}
       {isOpen && (
-        <div className="md:hidden bg-amber-700 border-t border-amber-600">
-          <div className="container mx-auto px-4 py-3">
-            <Link href="/" onClick={() => setIsOpen(false)} className="block w-full text-center bg-amber-600 hover:bg-amber-500 text-white px-4 py-3 rounded-lg">
+        <div className={`md:hidden border-t border-white/10 ${navbarBackground}`}>
+          <div className="container mx-auto grid gap-2 px-4 py-3">
+            <Link href="/" onClick={() => setIsOpen(false)} className="block w-full rounded-lg bg-stone-700 px-4 py-3 text-center text-white transition-colors hover:bg-stone-600">
               Back to Pizza Section
+            </Link>
+            <Link
+              href={currentSection === "canape" ? "/kitchen-catering" : "/canape-catering"}
+              onClick={() => setIsOpen(false)}
+              className={`block w-full rounded-lg px-4 py-3 text-center text-white transition-colors ${sectionButtonBackground}`}
+            >
+              {currentSection === "canape" ? "Kitchen Section" : "Canapé Section"}
             </Link>
           </div>
         </div>

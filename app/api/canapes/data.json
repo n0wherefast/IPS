@@ -1,0 +1,92 @@
+[
+  {
+    "id": "salmon-bruschetta",
+    "name": "Salmon bruschetta",
+    "description": "House-made bread, smoked salmon, cream cheese, capers and spring onion.",
+    "category": "Traditional"
+  },
+  {
+    "id": "arancini",
+    "name": "Arancini",
+    "description": "Classic ragù, truffle and porcini, basil pesto or four cheese.",
+    "category": "Traditional"
+  },
+  {
+    "id": "portobello-mushroom",
+    "name": "Portobello mushroom",
+    "description": "Garlic, smoked provolone and mushrooms. 🍃",
+    "category": "Traditional"
+  },
+  {
+    "id": "pizza-bites",
+    "name": "Pizza bites",
+    "description": "Tomato, mozzarella and basil. 🍃",
+    "category": "Traditional"
+  },
+  {
+    "id": "mini-frittata",
+    "name": "Mini frittata",
+    "description": "Spinach, parmesan and onion. 🍃",
+    "category": "Traditional"
+  },
+  {
+    "id": "crumbed-mozzarella-sticks",
+    "name": "Crumbed mozzarella sticks",
+    "description": "Mozzarella and breadcrumbs. 🍃",
+    "category": "Traditional"
+  },
+  {
+    "id": "tuna-crostini",
+    "name": "Tuna crostini",
+    "description": "Tuna, onions and mayonnaise.",
+    "category": "Traditional"
+  },
+  {
+    "id": "potato-croquettes",
+    "name": "Potato croquettes",
+    "description": "Potato cream and breadcrumbs. 🍃",
+    "category": "Traditional"
+  },
+  {
+    "id": "mini-cannoli",
+    "name": "Mini cannoli",
+    "description": "Chocolate or ricotta. 🍃",
+    "category": "Traditional"
+  },
+  {
+    "id": "profiteroles",
+    "name": "Profiteroles",
+    "description": "Chocolate and custard cream.",
+    "category": "Traditional"
+  },
+  {
+    "id": "burrata-prosciutto-crostini",
+    "name": "Burrata & prosciutto crostini",
+    "description": "House-made bread, burrata and rocket.",
+    "category": "Premium"
+  },
+  {
+    "id": "antipasto-skewer",
+    "name": "Antipasto skewer",
+    "description": "Mozzarella bocconcini, cherry tomato, olives and prosciutto.",
+    "category": "Premium"
+  },
+  {
+    "id": "polpettine",
+    "name": "Polpettine",
+    "description": "Pork and veal meatballs with ragù.",
+    "category": "Premium"
+  },
+  {
+    "id": "veal-involtini",
+    "name": "Veal involtini",
+    "description": "Veal involtini, breadcrumbs and provolone cheese.",
+    "category": "Premium"
+  },
+  {
+    "id": "mortadella-crostini",
+    "name": "Mortadella crostini",
+    "description": "House-made bread, mortadella, stracciatella and pistachio crumbs.",
+    "category": "Premium"
+  }
+]
